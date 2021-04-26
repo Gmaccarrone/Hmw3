@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<head>
+    <title>Tv Blog - CercaTitoli</title>
+    <meta name="viewport" content="width=device-width, initial-scale1">
+    <meta charset="utf-8">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+
+    <link href="hmw3.css" rel = "stylesheet">
+
+    <script src="hmw3.js" defer></script>
+</head>
+<body>
+    <header>
+        <box id="overlay"></box>
+        <box id="top">
+            <logo>Tv Blog</logo> 
+            <nav>
+                <a class="link" href="../hmw1/hmw1.html" id="home">Home</a>
+                <a class="link" href="../hmw3/hmw3.html" id="cerca">Cerca</a>
+                <a class="link" href="../hmw2/hmw2.html" id="sezione-pref">Sezione preferiti</a>
+                <a class="link" id="iscriviti">Iscriviti</a>
+                <a class="link" id="accedi">Accedi</a>
+            </nav>
+            <nav id = "box-menu">
+                <h3 id="menu-line"> </h3>
+                <h3 id="menu-line"> </h3>
+                <h3 id="menu-line"> </h3>
+            </nav>
+        </box>
+    </header>
+        <form id="searchBar">
+            <input placeholder="Cerca un titolo" id="query" autocomplete="off">
+            <input type="image" id="searchButton" alt="Submit" src="https://www.materialui.co/materialIcons/action/search_white_192x192.png">
+        </form>
+        <div id="waitingDiv">
+            <label class="waitingTitle">Trova informazioni sui titoli che ti interessano</label>
+            <img id="waitingImg" src="../hmw2/images/Ud8xgso.gif">    
+            <label class="waitingTitle">Aspettiamo solo che tu cerchi qualcosa</label>
+        </div>
+
+    <section id="IMDBBox" class="hidden">
+        <div id="IMDBTitleBox">
+            <h1 id="IMDBTitle" class="hidden">Cosa troviamo cercando su </h1>
+            <img src="https://img.icons8.com/ios-filled/452/imdb.png"  id="IMDBLogo" class="hidden"> 
+        </div>
+
+        <div id="IMDBResult">
+            <img id="IMDBPoster" class="hidden">
+            <div id="IMDBDetails" class="hidden">
+                <h1 id="IMDBResultTitle"></h1><br>
+            <div id ="IMDBSecondaryInfo">
+                <div id="IMDBInfo">
+                    <h1 id="IMDBAuth"></h1>
+                    <h1 id="IMDBGenres"></h1>
+                    <h1 id="IMDBdate"></h1>
+                </div>
+                <div id="IMDBRating">
+                    <h1 id="IMDBRateTxt" class="hidden">Voto:</h1>
+                    <h1 id="IMDBRate" class="hidden"></h1>
+                </div>
+            </div>
+                <h1 id="IMDBPlot"></h1>
+            </div>
+        </div>
+    </section> 
+
+    <section id="spotifyBox" class='hidden'>
+        <box id="spotifyTitleBox" class='hidden'>
+            <h1 id="spotifyTitle" class='hidden'>Cosa troviamo cercando su </h1>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Spotify_logo_with_text.svg/1200px-Spotify_logo_with_text.svg.png"  id="spotifyLogo" class='hidden'> 
+            </box><br>
+
+        <box id="spotifyResults" >
+            <!-- qui verranno messi i risultati di spotify -->
+        </box>
+    </section>
+
+    <footer>
+        <txt-footer>Powered by Giuseppe Maccarrone - O46001814</txt-footer><br>
+        <txt-footer id="uni">Università degli studi di catania - corso di web programming</txt-footer>
+    </footer>
+</body>

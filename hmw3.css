@@ -1,0 +1,434 @@
+body{
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    
+    font-family: 'roboto slab', 'Lucida Sans';
+}
+header{
+    color: whitesmoke;
+    text-shadow: 0 0 4px black;
+    
+    background-image: url("../hmw2/images/backgroundTV.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+    height: 45px;
+}
+h1{margin: 7.5px;}
+@media(max-width: 700px){
+    h1{margin: 3px}
+}
+#menu-line{
+    display: none;
+}
+
+#box-menu{
+    display: none;
+}
+
+.link{
+    padding: 7px;
+    padding-top: 0px;
+    z-index: 1;
+}
+.link:link{color: white;
+    text-decoration: none;}
+
+.link:visited{color: white;}
+
+@media(max-width: 700px){
+    .link{
+        display: none;
+    }
+    #box-menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: -5px;
+        width: 40px;
+        height: 40px;
+    }
+    #menu-line{
+        display: block;
+        background-color: white;
+        width: 30px;
+        height: 5px;
+        margin-top: 5px;
+        margin-bottom: 0px;
+    }
+}
+
+.link:hover{
+    color: black;
+    padding-top: 5px;
+    text-shadow: none;
+}
+#accedi:hover{
+    background-color:crimson ;
+}
+#iscriviti:hover{
+    background-color:magenta ;
+}
+#sezione-pref:hover{
+    background-color: greenyellow;
+}
+#cerca:hover{
+    background-color:aquamarine;
+}
+#home:hover{
+    background-color:khaki;
+}
+
+#top{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-bottom: 5px ;
+    font-size: 25px;
+}
+
+logo{margin-left: 20px;}
+nav{margin-right: 10px;}
+
+#overlay{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#waitingDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 750px;
+    width: 100%;
+}
+.waitingTitle{
+    font-size: 45px;
+    font-weight: bolder;
+}
+#waitingImg{
+    height: 300px;
+    width: 300px;
+}
+@media(max-width: 700px){
+    .waitingTitle{
+        font-size: 20px;
+        text-align: center;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    #waitingImg{
+        height: 200px;
+        width: 200px;
+    }
+    #waitingDiv{
+        height: 500px;
+    }
+}
+
+#searchBar{
+    background-color:  rgb(43, 41, 41);
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    width: 350px;
+    height: 30px;
+    padding: 15px;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 35px;
+    size: auto;
+}
+#searchButton{
+    height: 30px;
+    width: 30px;
+}
+#query{
+    color: white;
+    width: 300px;
+    height: 30px;
+    font-size: 20px;
+    background: none;
+    border:none;
+}
+#query:focus{
+    background-color: rgb(43, 41, 41);
+    color: white;
+    outline: none;
+}
+@media(max-width: 700px){
+    #searchBar{width: 350px;
+        width: 250px;
+        height: 30px;
+        align-self: center;
+        margin-left: 0;
+        padding: 10px;
+    }
+    #query{
+        width: 200px;
+    }
+}
+
+#spotifyBox {
+    background-color: rgb(43, 41, 41);
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+#spotifyResults {
+    display: flex;
+    margin-right: 50px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#spotifyTitle {
+    margin:0%;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#spotifyLogo {
+    height: 39px;
+    margin-left: 10px;
+}
+#spotifyTitleBox {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+}
+@media(max-width: 700px){
+    #spotifyTitle {font-size: 20px;}
+    #spotifyBox {
+        padding-left: 30px;
+        
+        align-items: center;
+    }
+    #spotifyLogo {
+        height: 25px;
+        margin-left: 5px;
+    }
+}
+
+.spotifyAlbum {
+    color: rgb(43, 41, 41);
+    margin: 10px;
+    width: 170px;
+    height: auto;
+    text-align: center;
+    padding: 10px;
+    border: 3px solid #1ed760;
+}
+.spotifyResultImg {
+    width: 150px;
+    height: 150px;
+}
+.nameAlbum {
+    font-size: 17px;
+}
+.nameAlbum:link{
+    color: whitesmoke;
+    width: 150px;
+    text-decoration: none;
+}
+.nameAlbum:visited{
+    color: whitesmoke;
+    width: 150px;
+}
+.nameAlbum:hover{
+    color: #1ed760;
+    width: 150px;
+    text-decoration: none;
+}
+@media(max-width: 700px){
+    .spotifyAlbum {width: 100px;}
+    .nameAlbum {font-size: 13px;}
+    .spotifyResultImg {
+        width: 90px;
+        height: 90px;}
+}
+
+
+#IMDBNotFound,#albumNotFound{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+#IMDBResultImgNotFound,#spotifyResultImgNotFound{
+    width: auto;
+    height: 60px;
+    margin-left: 10px;
+}
+#nameAlbumNotFound{
+    font-size: 27px;
+    color: whitesmoke;
+}
+#IMDBNameNotFound{
+    font-size: 27px;
+    color: rgb(43, 41, 41);
+    font-weight: bolder;
+}
+@media(max-width: 700px){
+    #nameAlbumNotFound,#IMDBNameNotFound {font-size: 20px;}
+    #IMDBResultImgNotFound,#spotifyResultImgNotFound {height: 40px;}
+}
+
+
+
+#IMDBBox {
+    background-color: #FEC400;
+    margin-top: 20px;
+    padding-left: 50px;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+#IMDBTitleBox {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+#IMDBResult { 
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 50px;
+}
+#IMDBTitle {
+    margin:0%;
+    color:black;
+    font-size: 33px;
+    font-weight: bold;
+}
+#IMDBLogo {
+    width: 90px;
+    height: 50px;
+    margin-left: 10px;
+    object-fit: cover;
+}
+@media(max-width: 700px){
+    #IMDBBox {padding-left: 10px;}
+    #IMDBTitle {font-size: 20px;}
+    #IMDBLogo {
+        width: 50px;
+        height: 33px;
+    }
+    #IMDBBox {
+        min-height: 300px;
+    }
+}
+
+#IMDBPoster{
+    max-width: 35%;
+    min-width: 35%;
+    object-fit: contain;
+}
+#IMDBDetails{
+    margin-left: 50px;
+    width: 55%;
+}
+#IMDBSecondaryInfo{
+    display: flex;
+    align-content: space-around;
+}
+#IMDBResultTitle{
+    width: 100%;
+    height: min-content;
+    font-size: 80px;
+    margin: 0;
+    
+}
+#IMDBInfo{
+    width: 50%;
+}
+#IMDBRating{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+#IMDBRate{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 120px;
+    height: 120px;
+    background-color: black;
+    font-size: 50px;
+    color: #FEC400;
+}
+#IMDBRateTxt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 70px;
+}
+@media(max-width: 700px){
+    #IMDBResultTitle {font-size: 30px;}
+    #IMDBRate {    
+        min-width: 30px;
+        height: 30px;
+        font-size: 15px;
+    }
+    #IMDBRateTxt {font-size: 20px;}
+    #IMDBDetails {margin-left: 10px;}
+    #IMDBInfo {font-size: 7px;}
+    #IMDBPlot {font-size: 15px;}
+    #IMDBDetails{width: 57%;}
+}
+
+footer{
+    background-color: aquamarine;
+    height: 150px;
+    border-top: 5px solid rgb(53, 53, 53);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 25px;
+    padding-top: 15px;
+}
+
+txt-footer{
+    color: rgb(53, 53, 53);
+    font-size: 50px;
+    font-weight: bold;
+    width: 90%;
+}
+
+#uni{
+    color: rgb(53, 53, 53);
+    font-size: 30px;
+}
+@media(max-width: 700px){
+    txt-footer {
+        font-size: 20px;
+    }
+    #uni {
+        font-size: 15px;
+    }
+}
+
+#waitingDiv.hidden,#IMDBBox.hidden,#IMDBRateTxt.hidden,#IMDBRate.hidden,.hidden{
+    display: none;
+    height: 0;
+    width: 0;
+}
